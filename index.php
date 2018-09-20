@@ -1,3 +1,12 @@
+<?php
+
+session_start();
+if (!isset($_SESSION["connect"])) {
+  header('Location: inscription.php');
+}
+
+ ?>
+
 <!doctype html>
 <html class="no-js" lang="fr">
 
