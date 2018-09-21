@@ -1,4 +1,6 @@
 <?php
-$title = 'Index';
-$content = 'Bienvenue sur mon site';
- ?>
+
+// $title = 'Index';
+// $content = 'Bienvenue sur mon site';
+
+?>

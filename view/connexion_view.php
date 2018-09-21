@@ -1,3 +1,5 @@
+<?php ob_start(); ?>
+
 <main>
   <section>
     <form class="" action="connexion.php" method="post">
@@ -13,3 +15,7 @@
     </form>
   </section>
 </main>
+
+<?php $content = ob_get_clean(); ?>
+
+<?php require('template.php'); ?>
