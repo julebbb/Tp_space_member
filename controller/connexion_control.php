@@ -1,5 +1,7 @@
 <?php
 require('model/model_connexion.php');
+$title = 'Connexion';
+$descript = 'Bienvenue sur mon site';
 
 if (isset($_POST['pseudo']) AND isset($_POST['password'])) {
 
