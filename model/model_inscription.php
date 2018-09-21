@@ -2,6 +2,7 @@
 
 
 function check_pseudo($pseudo) {
+  
   require('config.php');
 
   $bdd = $db->prepare('SELECT id FROM member WHERE pseudo=?');
@@ -13,6 +14,7 @@ function check_pseudo($pseudo) {
 }
 
 function check_email($email) {
+
   require('config.php');
 
   $check_email = $db->prepare('SELECT id FROM member WHERE email=?');
