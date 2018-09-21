@@ -1,9 +1,13 @@
 <?php
 
 session_start();
-if (!isset($_SESSION["connect"])) {
+if (!isset($_SESSION["pseudo"]) AND !isset($_SESSION["id"])) {
   header('Location: inscription.php');
 }
+
+
+
+
 
  ?>
 
@@ -32,7 +36,9 @@ if (!isset($_SESSION["connect"])) {
   <![endif]-->
 
   <!-- Add your site or application content here -->
+  <p>Hello <?php echo $_SESSION['pseudo'] ?> !</p>
 
+  <a href="deconnexion.php">Se déconnecter</a>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

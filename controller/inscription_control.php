@@ -1,8 +1,11 @@
 <?php
   if (isset($_POST['pseudo']) AND isset($_POST['password']) AND isset($_POST['pass_retry']) AND isset($_POST['email'])) {
+
     if (empty($_POST['pseudo']) AND empty($_POST['password']) AND empty($_POST['pass_retry']) AND empty($_POST['email'])) {
+
       echo "Les champs ne sont pas toute remplis !";
     } else {
+      
       $pseudo = strip_tags($_POST['pseudo']);
       $password = strip_tags($_POST['password']);
       $pass_retry= strip_tags($_POST['pass_retry']);
