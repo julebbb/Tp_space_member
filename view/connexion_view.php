@@ -13,6 +13,8 @@
 
       <input type="submit" name="send" value="Envoyer">
     </form>
+    
+    <a href="inscription.php">Vous n'êtes pas membre ? Inscrivez vous !</a>
   </section>
 </main>
 

@@ -17,6 +17,8 @@ if (isset($_POST['pseudo']) AND isset($_POST['password'])) {
       $_SESSION['id'] = $result['id'];
       $_SESSION['pseudo'] = $pseudo;
       header('Location: index.php');
+
+      connect($pseudo);
     }
 
     else {

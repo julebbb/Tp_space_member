@@ -1,3 +1,4 @@
+<?php ob_start(); ?>
 <main>
   <section>
     <h2>Inscription</h2>
@@ -22,3 +23,7 @@
     <a href="connexion.php">Déja membre ? Se connecter</a>
   </section>
 </main>
+
+<?php $content = ob_get_clean(); ?>
+
+<?php require('template.php'); ?>
