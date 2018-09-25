@@ -97,12 +97,42 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+  height: 100vh;
+  text-align: center;
+}
 
+header {
+  height: 75px;
+  background: burlywood;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
 
+p {
+  margin: 0 10px;
+}
 
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
 
+a {
+  color: sienna;
+  text-decoration: none;
+}
 
-
+input {
+  padding: 5px;
+  margin: 5px;
+}
 
 
 
