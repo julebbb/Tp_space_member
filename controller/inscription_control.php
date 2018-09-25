@@ -34,7 +34,9 @@ require('view/inscription_view.php');
           if ($password == $pass_retry) {
 
             //Add member in database
+
             add_member($pseudo, $pass_hash, $email);
+            echo "Votre compte à bien été crée !";
 
           } else {
 

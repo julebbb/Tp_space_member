@@ -2,7 +2,7 @@
 
 
 function check_pseudo($pseudo) {
-  
+
   require('config.php');
 
   $bdd = $db->prepare('SELECT id FROM member WHERE pseudo=?');
@@ -28,8 +28,8 @@ function add_member($pseudo, $pass_hash, $email) {
 
   require('config.php');
 
-  $req = $db->prepare('INSERT INTO member(pseudo, password, email, date_entry)
-                  VALUES(:pseudo, :password, :email, NOW())');
+  $req = $db->prepare('INSERT INTO member(pseudo, password, email, date_entry, connect)
+                  VALUES(:pseudo, :password, :email, NOW(), 0)');
 
   $req->execute(array(
     'pseudo' => $pseudo,

@@ -1,10 +1,26 @@
 <?php
+
 require('model/model_connexion.php');
 $title = 'Connexion';
 $descript = 'Bienvenue sur mon site';
 
 //View connexion
 require('view/connexion_view.php');
+
+if (isset($_COOKIE['pseudo']) AND isset($_COOKIE['password'])) {
+
+  $check = check_password($_COOKIE['pseudo']);
+
+  if ($_COOKIE['password'] == $check['password']) {
+    session_start();
+    $_SESSION['id'] = $check['id'];
+    $_SESSION['pseudo'] = $_COOKIE['pseudo'];
+    header('Location: index.php');
+
+  } 
+
+
+}
 
 
 if (isset($_POST['pseudo']) AND isset($_POST['password'])) {

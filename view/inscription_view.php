@@ -5,10 +5,10 @@
     <form class="" action="index.php?action=inscription" method="post">
 
         <label for="pseudo">Pseudo</label>
-        <input type="text" name="pseudo" value="Miaou">
+        <input type="text" name="pseudo" value="">
 
         <label for="password">Mot de passe</label>
-        <input type="password" name="password" value="debug">
+        <input type="password" name="password" value="">
 
         <label for="pass_retry">Retapez votre mot de passe</label>
         <input type="password" name="pass_retry" value="">
