@@ -127,11 +127,18 @@ form {
 a {
   color: sienna;
   text-decoration: none;
+  z-index: 1;
 }
 
 input {
   padding: 5px;
   margin: 5px;
+}
+
+header p {
+  position: absolute;
+  margin: auto;
+  width: 99%;
 }
 
 
