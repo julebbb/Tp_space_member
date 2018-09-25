@@ -14,6 +14,7 @@ function check_password($pseudo) {
 }
 
 function connect($pseudo) {
+
   require('config.php');
 
   $table = $db->prepare('UPDATE member SET connect = 1 WHERE pseudo = :pseudo');

@@ -2,6 +2,8 @@
 
 <main>
   <section>
+    <h2>Se connecter</h2>
+    
     <form class="" action="index.php?action=connexion" method="post">
       <label for="pseudo">Pseudo</label>
       <input type="text" name="pseudo" value="">
@@ -9,6 +11,7 @@
       <label for="password">Mot de passe</label>
       <input type="password" name="password" value="">
 
+      <label for="connexion_auto">Connexion auto</label>
       <input type="checkbox" name="connexion_auto" value="yes">
 
       <input type="submit" name="send" value="Envoyer">

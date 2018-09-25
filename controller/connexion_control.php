@@ -7,18 +7,20 @@ $descript = 'Bienvenue sur mon site';
 //View connexion
 require('view/connexion_view.php');
 
+//reset SESSION with COOKIE and check if password correct before doing
 if (isset($_COOKIE['pseudo']) AND isset($_COOKIE['password'])) {
 
   $check = check_password($_COOKIE['pseudo']);
 
   if ($_COOKIE['password'] == $check['password']) {
+
     session_start();
+
     $_SESSION['id'] = $check['id'];
     $_SESSION['pseudo'] = $_COOKIE['pseudo'];
     header('Location: index.php');
 
-  } 
-
+  }
 
 }
 
@@ -34,6 +36,7 @@ if (isset($_POST['pseudo']) AND isset($_POST['password'])) {
     if (password_verify($_POST['password'], $result['password'])) {
 
       session_start();
+
       $_SESSION['id'] = $result['id'];
       $_SESSION['pseudo'] = $pseudo;
       header('Location: index.php');
