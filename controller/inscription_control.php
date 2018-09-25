@@ -3,6 +3,9 @@
 require('model/model_inscription.php');
 $title = 'Inscription';
 $descript = "Page d'inscription";
+
+require('view/inscription_view.php');
+
   //Verif if form is validate
   if (isset($_POST['pseudo']) AND isset($_POST['password']) AND isset($_POST['pass_retry']) AND isset($_POST['email'])) {
 

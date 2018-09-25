@@ -2,19 +2,19 @@
 
 <main>
   <section>
-    <form class="" action="connexion.php" method="post">
+    <form class="" action="index.php?action=connexion" method="post">
       <label for="pseudo">Pseudo</label>
       <input type="text" name="pseudo" value="Miaou">
 
       <label for="password">Mot de passe</label>
       <input type="password" name="password" value="debug">
 
-      <input type="checkbox" name="connexion_auto" value="">
+      <input type="checkbox" name="connexion_auto" value="yes">
 
       <input type="submit" name="send" value="Envoyer">
     </form>
-    
-    <a href="inscription.php">Vous n'êtes pas membre ? Inscrivez vous !</a>
+
+    <a href="index.php?action=inscription">Vous n'êtes pas membre ? Inscrivez vous !</a>
   </section>
 </main>
 

@@ -2,7 +2,7 @@
 <main>
   <section>
     <h2>Inscription</h2>
-    <form class="" action="inscription.php" method="post">
+    <form class="" action="index.php?action=inscription" method="post">
 
         <label for="pseudo">Pseudo</label>
         <input type="text" name="pseudo" value="Miaou">
@@ -20,7 +20,7 @@
 
     </form>
 
-    <a href="connexion.php">Déja membre ? Se connecter</a>
+    <a href="index.php?action=connexion">Déja membre ? Se connecter</a>
   </section>
 </main>
 
